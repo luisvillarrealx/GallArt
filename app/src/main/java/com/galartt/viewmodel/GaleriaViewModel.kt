@@ -1,13 +1,41 @@
 package com.galartt.viewmodel
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.*
+import com.galartt.data.GaleriaDatabase
+import com.galartt.model.Galeria
+import com.galartt.repository.GaleriaRepository
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
-class GaleriaViewModel : ViewModel() {
+class GaleriaViewModel (application: Application): AndroidViewModel(application) {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+    val getAllData: LiveData<List<Galeria>>
+
+    private val repository:GaleriaRepository
+
+    init {
+        val galeriaDao = GaleriaDatabase.getDatabase(application).galeriaDao()
+        repository = GaleriaRepository(galeriaDao)
+        getAllData = repository.getAllData
     }
-    val text: LiveData<String> = _text
+
+    fun addArte(galeria: Galeria){
+        viewModelScope.launch(Dispatchers.IO){
+            repository.addArte(galeria)
+        }
+    }
+
+    fun updateArte(galeria: Galeria){
+        viewModelScope.launch(Dispatchers.IO){
+            repository.updateArte(galeria)
+        }
+    }
+
+    fun deleteArte(galeria: Galeria){
+        viewModelScope.launch(Dispatchers.IO){
+            repository.deleteArte(galeria)
+        }
+    }
+
 }
