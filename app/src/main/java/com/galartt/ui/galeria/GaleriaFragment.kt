@@ -1,4 +1,4 @@
-package com.galartt.ui.home
+package com.galartt.ui.galeria
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.galartt.databinding.FragmentHomeBinding
+import com.galartt.databinding.FragmentGaleriaBinding
+import com.galartt.viewmodel.GaleriaViewModel
 
-class HomeFragment : Fragment() {
+class GaleriaFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentGaleriaBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +23,14 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        val galeriaViewModel =
+            ViewModelProvider(this).get(GaleriaViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentGaleriaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        galeriaViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

@@ -64,7 +64,6 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         val usuario = auth.currentUser
         actualiza(usuario)
-
     }
 
     private fun haceLogin() {
