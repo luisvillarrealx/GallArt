@@ -33,7 +33,7 @@ class AddArteFragment : Fragment() {
 
         return binding.root
     }
-
+    // Galeria
     private fun addArte() {
         val autor = binding.etAutor.text.toString()
         val correo = binding.etCorreo.text.toString()
