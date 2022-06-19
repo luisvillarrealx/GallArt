@@ -25,7 +25,7 @@ class AddArteFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         galeriaViewModel = ViewModelProvider(this)[GaleriaViewModel::class.java]
         _binding = FragmentAddArteBinding.inflate(inflater, container,false)
 

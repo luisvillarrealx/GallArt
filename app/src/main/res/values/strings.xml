@@ -23,4 +23,8 @@
     <string name="bt_actualizar">Actualizar obra</string>
     <string name="arteAdded">Arte agregada</string>
     <string name="notAdded">No se pudo agegar</string>
+    <string name="delete">"¿Seguro que quiere eliminarlo? "</string>
+    <string name="seguroBorrar">¿Está seguro?</string>
+    <string name="si">si</string>
+    <string name="no">no</string>
 </resources>

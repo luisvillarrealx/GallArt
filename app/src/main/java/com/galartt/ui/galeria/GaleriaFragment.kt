@@ -23,16 +23,10 @@ class GaleriaFragment : Fragment() {
     private var _binding: FragmentGaleriaBinding? = null
     private val binding get() = _binding!!
 
-/* 1:17:00  https://ufidelitas.sharepoint.com/sites/ProgramacinparaDispositivosMvilesCampusVirtual2022
-Segundo712/Documentos%20compartidos/Forms/AllItems.aspx?id=%2Fsites%2FProgramacinparaDispositivosMviles
-CampusVirtual2022Segundo712%2FDocumentos%20compartidos%2FGeneral%2FRecordings%2FClase%20Sincr%C3%B3nica%20
-M%C3%B3vil%20Jueves%20Noche%2D20220602%5F181058%2DMeeting%20Recording%2Emp4&parent=%2Fsites%2FProgramacinpara
-DispositivosMvilesCampusVirtual2022Segundo712%2FDocumentos%20compartidos%2FGeneral%2FRecordings*/
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         galeriaViewModel = ViewModelProvider(this)[GaleriaViewModel::class.java]
         _binding = FragmentGaleriaBinding.inflate(inflater, container,false)
 

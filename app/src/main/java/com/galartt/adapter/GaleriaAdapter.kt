@@ -46,6 +46,7 @@ class GaleriaAdapter: RecyclerView.Adapter<GaleriaAdapter.GaleriaViewHolder>() {
     }
 
     fun setData(artes: List<Galeria>) {
+        this.listaArtes = artes
         // se redibuja toda la lista
         notifyDataSetChanged()
     }
