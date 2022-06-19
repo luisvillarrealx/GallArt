@@ -13,4 +13,13 @@
     <string name="menu_galeria">Inicio</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_autor">Autor de la obra</string>
+    <string name="msg_correo">Correo del autor</string>
+    <string name="msg_telefono">Teléfono (4444-5555)</string>
+    <string name="msg_web">Sitio web</string>
+    <string name="bt_agregar">Agregar obra</string>
+    <string name="arteAdded">Arte agregada</string>
+    <string name="notAdded">No se pudo agegar</string>
 </resources>

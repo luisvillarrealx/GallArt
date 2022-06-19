@@ -9,7 +9,11 @@
         android:id="@+id/nav_galeria"
         android:name="com.galartt.ui.galeria.GaleriaFragment"
         android:label="@string/menu_galeria"
-        tools:layout="@layout/fragment_galeria" />
+        tools:layout="@layout/fragment_galeria" >
+        <action
+            android:id="@+id/action_nav_galeria_to_addArteFragment"
+            app:destination="@id/addArteFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +26,13 @@
         android:name="com.galartt.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addArteFragment"
+        android:name="com.galartt.ui.galeria.AddArteFragment"
+        android:label="fragment_add_arte"
+        tools:layout="@layout/fragment_add_arte" >
+        <action
+            android:id="@+id/action_addArteFragment_to_nav_galeria"
+            app:destination="@id/nav_galeria" />
+    </fragment>
 </navigation>
