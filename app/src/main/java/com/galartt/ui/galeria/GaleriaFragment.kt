@@ -8,7 +8,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.galartt.R
+import com.galartt.adapter.GaleriaAdapter
 import com.galartt.databinding.FragmentGaleriaBinding
 import com.galartt.viewmodel.GaleriaViewModel
 
@@ -37,6 +39,19 @@ DispositivosMvilesCampusVirtual2022Segundo712%2FDocumentos%20compartidos%2FGener
         // accion para pasar a addObra
         binding.addArteButton.setOnClickListener{
             findNavController().navigate(R.id.action_nav_galeria_to_addArteFragment)
+        }
+
+        // activar el reciclador
+        val galeriaAdapter = GaleriaAdapter()
+        val reciclador = binding.reciclador
+
+        reciclador.adapter = galeriaAdapter
+        reciclador.layoutManager = LinearLayoutManager(requireContext())
+
+        galeriaViewModel = ViewModelProvider(this)[GaleriaViewModel::class.java]
+
+        galeriaViewModel.getAllData.observe(viewLifecycleOwner) {
+            artes -> galeriaAdapter.setData(artes)
         }
 
         return binding.root

@@ -23,12 +23,12 @@ class MainActivity : AppCompatActivity() {
         FirebaseApp.initializeApp(this)
         auth = Firebase.auth
 
-        //Metodo para login
+        // metodo para login
         binding.btLogin.setOnClickListener{
             haceLogin();
         }
 
-        //Metodo para login
+        // metodo para signup
         binding.btRegister.setOnClickListener{
             haceRegister();
         }
@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Principal::class.java)
             startActivity(intent)
         }
-
     }
 
     public override fun onStart(){

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GalArtt</string>
+    <string name="app_name">GalArt</string>
     <string name="tv_correo">Correo</string>
     <string name="tv_clave">Contraseña</string>
     <string name="title_activity_principal">Principal</string>
@@ -20,6 +20,7 @@
     <string name="msg_telefono">Teléfono (4444-5555)</string>
     <string name="msg_web">Sitio web</string>
     <string name="bt_agregar">Agregar obra</string>
+    <string name="bt_actualizar">Actualizar obra</string>
     <string name="arteAdded">Arte agregada</string>
     <string name="notAdded">No se pudo agegar</string>
 </resources>
