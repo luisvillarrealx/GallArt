@@ -4,14 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/drawable/ic_login.xml" value="0.128" />
+        <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/drawable/ic_mic.xml" value="0.17" />
+        <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/drawable/ic_phone.xml" value="0.1" />
         <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/drawable/ic_registro.xml" value="0.128" />
         <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/layout/arte_fila.xml" value="0.536" />
+        <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/layout/arte_fila.xml" value="0.4" />
         <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/layout/arte_fila2.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/layout/fragment_add_arte.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/layout/fragment_galeria.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/layout/fragment_update_arte.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/layout/fragment_update_arte.xml" value="0.264" />
         <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/layout/nav_header_principal.xml" value="0.12685185185185185" />
+        <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/menu/activity_main_drawer.xml" value="0.1265625" />
+        <entry key="..\:/Users/Luis Villarreal/AndroidStudioProjects/GallArt/app/src/main/res/menu/principal.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Steven/Documents/GitHub/GallArt/app/src/main/res/drawable/ic_delete.xml" value="0.143" />
         <entry key="..\:/Users/Steven/Documents/GitHub/GallArt/app/src/main/res/drawable/ic_logoff.xml" value="0.143" />
         <entry key="..\:/Users/Steven/Documents/GitHub/GallArt/app/src/main/res/drawable/ic_registro.xml" value="0.1" />
